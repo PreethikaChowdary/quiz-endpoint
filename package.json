@@ -1,4 +1,13 @@
 {
+  "name": "quiz-endpoint",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  ...
+}
+{
 "name": "quiz-endpoint",
 "version": "1.0.0",
 "description": "Quiz endpoint that validates secret, visits JS-rendered pages with Playwright and submits answers.",
