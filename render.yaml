@@ -1,0 +1,25 @@
+services:
+- type: web
+name: quiz-endpoint
+env: node
+plan: standard
+branservices:
+- type: web
+name: quiz-endpoint
+env: node
+plan: standard
+branch: main
+buildCommand: "npm ci"
+startCommand: "npm start"
+envVars:
+- key: QUIZ_SECRET
+fromService: null
+- key: NODE_ENV
+value: productionch: main
+buildCommand: "npm ci"
+startCommand: "npm start"
+envVars:
+- key: QUIZ_SECRET
+fromService: null
+- key: NODE_ENV
+value: production
